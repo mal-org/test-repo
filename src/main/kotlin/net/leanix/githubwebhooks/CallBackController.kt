@@ -10,8 +10,4 @@ class CallBackController {
         println("Received Event")
         return "Received Event"
     }
-    @PostMapping("/test")
-    fun test():String {
-        return "Test endpoint"
-    }
 }
