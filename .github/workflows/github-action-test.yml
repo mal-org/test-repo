@@ -9,7 +9,6 @@ env:
   DEPENDENCY_MANAGER: GRADLE
   STAGE: test
   VERSION: 2.2.0
-  ALLOW_FAILURE: true
 
 
 jobs:
