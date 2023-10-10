@@ -1,0 +1,32 @@
+name: leanix-action-test
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    outputs:
+      build-tag: ${{ steps.build-image.outputs.tag }}
+      deployment-targets: ${{ steps.set-targets.outputs.matrix }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Build with Gradle
+        uses: gradle/gradle-build-action@v2
+        id: gradle-build
+        continue-on-error: false
+        with:
+          arguments: :build
+          build-root-directory: .
