@@ -1,4 +1,4 @@
-name: leanix-action-test
+name: deployment
 
 on:
   push:
