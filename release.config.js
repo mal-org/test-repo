@@ -3,9 +3,9 @@ const config = {
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
+    "gradle-semantic-release-plugin",
     ["@semantic-release/git", {
-      "assets": ["dist/*.js", "dist/*.js.map"],
-      "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
+      "assets": ["build.gradle.kts"],
       "message": "snyk: ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
     }],
     '@semantic-release/github'
