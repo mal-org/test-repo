@@ -1,9 +1,7 @@
 name: "PR Title Check action"
 on:
-  pull_request_target:
-    types:
-      - opened
-      - edited
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
 
 jobs:
   check-title:
