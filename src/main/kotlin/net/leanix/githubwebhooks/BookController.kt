@@ -28,5 +28,4 @@ class BookController {
         return ResponseEntity.created(URI.create("/books/${book.id}")).build()
     }
 }
-
 data class Book(val id: String, val title: String, val author: String)
