@@ -18,4 +18,10 @@ class CallBackController {
         return "Received Event"
     }
 
+    @PostMapping("/create")
+    fun createBlog():String {
+        println("Blog created")
+        return "Blog created"
+    }
+
 }
