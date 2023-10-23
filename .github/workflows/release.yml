@@ -47,7 +47,7 @@ jobs:
               return;
             }
 
-            await github.repos.updateRelease({
+            await github.rest.repos.updateRelease({
               owner: context.repo.owner,
               repo: context.repo.repo,
               release_id: draftRelease.id,
