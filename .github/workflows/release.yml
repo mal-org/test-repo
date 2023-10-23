@@ -2,7 +2,7 @@ name: Release
 
 on:
   pull_request:
-    types: [closed, labeled, unlabeled]
+    types: [closed]
 
 jobs:
   update_release_draft:
@@ -47,7 +47,7 @@ jobs:
               return;
             }
 
-            await github.repos.updateRelease({
+            await github.rest.repos.updateRelease({
               owner: context.repo.owner,
               repo: context.repo.repo,
               release_id: draftRelease.id,
