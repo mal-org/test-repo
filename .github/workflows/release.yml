@@ -35,7 +35,7 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const tag = "${{ steps.tag-action.outputs.tag }}";
-            const { data: releases } = await github.repos.listReleases({
+            const { data: releases } = await github.rest.repos.listReleases({
               owner: context.repo.owner,
               repo: context.repo.repo
             });
