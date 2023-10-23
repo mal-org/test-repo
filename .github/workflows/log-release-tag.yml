@@ -1,0 +1,17 @@
+name: Log Release Tag
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Get release tag
+        run: |
+          TAG_NAME=${{ github.event.release.tag_name }}
+          echo "Release tag is $TAG_NAME"
