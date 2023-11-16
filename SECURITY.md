@@ -2,20 +2,15 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
+The following table details the versions of the broker are
 currently being supported with security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| 1.3.0   | :white_check_mark: |
+| < 1.3   | :x:                |
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+If you think you have found a security vulnerability, please DO NOT disclose it publicly until we’ve had a chance to fix it.
+Please don’t report security vulnerabilities using GitHub issues, instead sends us an Email with the details.
