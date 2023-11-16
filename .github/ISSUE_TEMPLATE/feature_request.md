@@ -18,3 +18,8 @@ A clear and concise description of any alternative solutions or features you've 
 
 **Additional context**
 Add any other context or screenshots about the feature request here.
+
+TIPS: 
+- If you open a PR, please make sure to link it to this issue.
+- You can always edit your issue if it isn't formatted correctly.
+     See https://guides.github.com/features/mastering-markdown

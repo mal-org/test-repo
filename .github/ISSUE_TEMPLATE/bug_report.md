@@ -2,7 +2,7 @@
 name: Bug report
 about: Create a report to help us improve
 title: ''
-labels: bug, feature
+labels: bug
 assignees: ''
 
 ---
@@ -28,3 +28,8 @@ If applicable, add screenshots to help explain your problem.
 
 **Additional context**
 Add any other context about the problem here.
+
+TIPS: 
+- If you open a PR, please make sure to link it to this issue.
+- You can always edit your issue if it isn't formatted correctly.
+     See https://guides.github.com/features/mastering-markdown
