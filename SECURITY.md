@@ -14,3 +14,4 @@ currently being supported with security updates.
 
 If you think you have found a security vulnerability, please DO NOT disclose it publicly until we’ve had a chance to fix it.
 Please don’t report security vulnerabilities using GitHub issues, instead sends us an Email with the details.
+
