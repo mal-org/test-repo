@@ -13,14 +13,15 @@ jobs:
       steps:
       - name: Check branch name
         run: |
-          if [[ "${{ github.head_ref }}" == feature/* ]]; then
+          if [[ "${{ github.head_ref }}" == feature/* ]] || [[ "${{ github.head_ref }}" == bug/* ]] ; then
             echo "Branch naming is correct!"
           else
-            echo "Invalid branch name! Correct format: feature/<branch-name>"
+            echo "Invalid branch name! Correct format: 'feature/<branch-name>' or 'bug/<branch-name>'"
             exit 1
           fi
   build:
     name: build
+    needs: validation
     runs-on: ubuntu-latest
     outputs:
       build-tag: ${{ steps.build-image.outputs.tag }}
